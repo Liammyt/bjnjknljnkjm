@@ -1,0 +1,41 @@
+html{
+    background-color:rgb(209, 211, 176);
+}
+
+
+.square{
+    width: 100%;
+    height: 100px;
+    background-color:rgb(255, 235, 210);
+
+}
+
+.column{
+    float: left;
+    width: 15%;
+    padding: 20px;
+}
+
+.Food::before{
+    content: "China is famous for Peking duck, dumplings, Kung Pao chicken, sweet and sour pork ";
+    clear:both;
+    display:table;
+    text-align: center;
+}
+
+.Logo {
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+.column2{
+    float:left;
+    width: 15%;
+    padding: 20px;
+}
+
+.Food::after {
+    content: "";
+    clear:both;
+    display:table;
+}

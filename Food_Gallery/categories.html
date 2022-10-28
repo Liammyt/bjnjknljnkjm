@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <title>Asian Foods</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+ 
+</head>
+<body>
+   
+<div class="top">
+    <ul class="nav-menu">
+        <li class="homebtn"></li><a href="home.html">Home</a></li>
+        <li> <a href="">About</a></li>
+        <li> <a href="">Favourites</a></li>
+        <li> <a href="">Contact</a></li>
+        <a href="login.html">Log In</a></li>
+        <a href="categories.html">Categories</a></li>
+ 
+    </ul>
+</div>
+ 
+    <div class="square">
+        <div class="Logo">
+            <img src="logofoods.png">
+        </div>
+        <form action="">
+            <label for="Search-box"></label>
+            <input required id="search-box" type = "text" placeholder = "🔍Search">
+        </form>
+
+ 
+</div>
+</body>
+
+<body>
+
+    <h2>Food Categories</h2>
+    <button class="collapsible">Western</button>
+    <div class="content">
+      <a href="american.html">American</a>
+      <a href="canadian.html">Canadian</a>
+    </div>
+    <button class="collapsible">Europe</button>
+    <div class="content">
+    <a href="italian.html">Italian</a>
+    <a href="british.html">British</a>
+    <a href="french.html">French</a>
+    </div>
+    <button class="collapsible">Asian</button>
+    <div class="content">
+      <a href="chinese.html">Chinese</a>
+      <a href="korean.html">Korean</a>
+      <a href="japanese.html">Japanese</a>
+      <a href="thai.html">Thai</a>
+      <a href="vietnamese.html">Vietnamese</a>
+      <a href="indian.html">Indian</a>
+    </div>
+    
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+    
+    </body>
+
+</html>
